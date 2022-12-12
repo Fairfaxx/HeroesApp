@@ -1,5 +1,4 @@
 import { HeroList } from '../components/HeroList';
-import { heroes } from '../data/heroes';
 
 export const DcPage = () => {
   return (
@@ -7,7 +6,7 @@ export const DcPage = () => {
       <h1>DC Comics</h1>
       <hr />
 
-      <div>
+      <div className="d-flex">
         <HeroList publisher="DC Comics" />
       </div>
     </>
