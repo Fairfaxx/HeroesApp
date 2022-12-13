@@ -8,8 +8,6 @@ export const HeroCard = ({
   first_appearance,
   characters,
 }) => {
-  console.log(id);
-  console.log(`../assets/heroes/${id}.jpg`);
   return (
     <div
       className="card ms-3 animate__animated animate__fadeIn"
@@ -36,7 +34,7 @@ export const HeroCard = ({
               <small className="text-muted"> {first_appearance} </small>
             </p>
 
-            <Link to={`./hero/${id}`}>Más...</Link>
+            <Link to={`/hero/${id}`}>More info...</Link>
           </div>
         </div>
       </div>

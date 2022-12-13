@@ -11,10 +11,10 @@ export const HeroesRoutes = () => {
       <Navbar />
       <div className="container">
         <Routes>
-          <Route path="marvel" element={<MarvelPage />} exact />
+          <Route path="marvel" element={<MarvelPage />} />
           <Route path="dc" element={<DcPage />} />
           <Route path="search" element={<SearchHero />} />
-          <Route path="hero" element={<HeroPage />} />
+          <Route path="hero/:heroId" element={<HeroPage />} />
           {/* Search and Hero by ID */}
 
           <Route path="/" element={<Navigate to="/marvel" />} />
